@@ -28,7 +28,7 @@ npx --yes \
   -p "@semantic-release/changelog" \
   -p "@semantic-release/exec" \
   -p "@semantic-release/git" \
-  -p "@google/semantic-release-replace-plugin" \
+  -p "semantic-release-replace-plugin" \
   -p "conventional-changelog-conventionalcommits" \
   semantic-release \
   --ci \
@@ -38,6 +38,6 @@ npx --yes \
   --analyze-commits "@semantic-release/commit-analyzer" \
   --generate-notes "@semantic-release/release-notes-generator" \
   --verify-conditions "@semantic-release/changelog,@semantic-release/exec,@semantic-release/git" \
-  --prepare "@semantic-release/changelog,@semantic-release/exec,@google/semantic-release-replace-plugin" \
+  --prepare "@semantic-release/changelog,@semantic-release/exec,semantic-release-replace-plugin" \
   --branches "$branch" \
   --repository-url "file://$PWD"
